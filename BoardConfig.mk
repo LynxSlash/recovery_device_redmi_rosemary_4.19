@@ -187,5 +187,8 @@ TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
 # Vibrator
 TARGET_RECOVERY_DEVICE_MODULES += android.hardware.vibrator-service.rosemary
 RECOVERY_BINARY_SOURCE_FILES += $(TARGET_OUT_EXECUTABLES)/hw/android.hardware.vibrator-service.rosemary
-# PBRP Tourch
+
+#For_PB
+PB_DISABLE_DEFAULT_DM_VERITY := true
+PB_TORCH_MAX_BRIGHTNESS := 1
 PB_TORCH_PATH := "/sys/devices/platform/flashlights_mt6360/torch_brightness"
