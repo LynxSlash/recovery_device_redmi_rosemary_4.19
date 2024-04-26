@@ -95,11 +95,8 @@ if [ -f "$(gettop)/bootable/recovery/orangefox.cpp" ]; then
 		export FOX_USE_ZIP_BINARY=1
 		export FOX_USE_SED_BINARY=1
 		export FOX_USE_XZ_UTILS=1
-
-      	
-
-		  export BUNDLED_MAGISK_VER="27"
-        export BUNDLED_MAGISK_SUM="f511bd33d3242911d05b0939f910a3133ef2ba0e0ff1e098128f9f3cd0c16610
+	      # export BUNDLED_MAGISK_VER="27"
+              # export BUNDLED_MAGISK_SUM="f511bd33d3242911d05b0939f910a3133ef2ba0e0ff1e098128f9f3cd0c16610
 " # Sha256 sum of the prebuilt magisk
 
             if [ -f "${FOX_USE_SPECIFIC_MAGISK_ZIP}" -a "$(sha256sum "${FOX_USE_SPECIFIC_MAGISK_ZIP}" 2>/dev/null | awk '{print $1}')" != "${BUNDLED_MAGISK_SUM}" ]
