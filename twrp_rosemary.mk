@@ -31,7 +31,7 @@ $(call inherit-product, vendor/pb/config/common.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := rosemary
-PRODUCT_NAME := omni_rosemary
+PRODUCT_NAME := twrp_rosemary
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Note 10S 
 PRODUCT_MANUFACTURER := Xiaomi
